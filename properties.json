@@ -1,0 +1,4220 @@
+{
+  "generated": "2026-05-06T18:52:46.760097+00:00",
+  "source": "https://antares.noirlab.edu/properties",
+  "locus": [
+    {
+      "name": "7DCD",
+      "type": "float",
+      "origin": "Filter",
+      "description": "7DCD."
+    },
+    {
+      "name": "anomaly_mask",
+      "type": "str",
+      "origin": "Filter",
+      "description": "Mask imposed to limit periodic variables (period 100 - 1000d) and galactic plane stars. Values are Pass or Fail (likely periodic variable, i.e. Mira)"
+    },
+    {
+      "name": "anomaly_score",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Calculated anomaly score. From IF model, anom_score >~0.6 are anomalies, but lower artificial value of 0.53 is set. If none calculated, set to TBD"
+    },
+    {
+      "name": "anomaly_transient_dmdt_v1",
+      "type": "int",
+      "origin": "Filter",
+      "description": "Marked as an anomaly by \"anomaly_transient_dmdt\" filter, \"1\" is anomaly, \"0\" is not"
+    },
+    {
+      "name": "anomaly_type",
+      "type": "str",
+      "origin": "Filter",
+      "description": "Status of anomalous loci. Inlier if non-anomalous; Outlier if anomalous; TBD if to be determined once lc_feature_extractor is run in both passbands"
+    },
+    {
+      "name": "brightest_alert_id",
+      "type": "str",
+      "origin": "ANTARES",
+      "description": "Brightest mag reading Alert on this Locus."
+    },
+    {
+      "name": "brightest_alert_magnitude",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Magnitude of the brightest alert on this Locus."
+    },
+    {
+      "name": "brightest_alert_observation_time",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Observation time [MJD] of the brightest alert on this Locus."
+    },
+    {
+      "name": "decMean",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Declination from single epoch detections (weighted mean) in equinox J2000 at the mean epoch given by epochMean."
+    },
+    {
+      "name": "desoto_dynesty_param_1",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 1 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_10",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 10 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_11",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 11 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_12",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 12 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_13",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 13 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_14",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 14 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_2",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 2 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_3",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 3 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_4",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 4 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_5",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 5 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_6",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 6 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_7",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 7 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_8",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 8 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_dynesty_param_9",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Median fitting parameter 9 of the model described in de Soto et al. (TBD) using dynesty nested sampling."
+    },
+    {
+      "name": "desoto_transient_prob",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Probability associated with the most-likely SN type from the classifier detailed in de Soto et al. (TBD)."
+    },
+    {
+      "name": "desoto_transient_type",
+      "type": "str",
+      "origin": "Filter",
+      "description": "Type of SN according to a multi-layer perceptron classifier detailed in de Soto et al. (TBD). One of SNIa, SNIbc, SNII, SNIIn, or SLSN-I."
+    },
+    {
+      "name": "dist/DLR",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Distance from transient to host normalized by the Directional Light Radius (DLR)."
+    },
+    {
+      "name": "ECL_interest_score",
+      "type": "float",
+      "origin": "Filter",
+      "description": "interestingness of the alert by algorithm ECL"
+    },
+    {
+      "name": "feature_amplitude_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band half of the interval between maximum and minimum magnitude"
+    },
+    {
+      "name": "feature_amplitude_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band half of the interval between maximum and minimum magnitude"
+    },
+    {
+      "name": "feature_anderson_darling_normal_flux_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band unbiased Anderson-Darling normality test statistics for flux light curve"
+    },
+    {
+      "name": "feature_anderson_darling_normal_flux_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band unbiased Anderson-Darling normality test statistics for flux light curve"
+    },
+    {
+      "name": "feature_anderson_darling_normal_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band unbiased Anderson-Darling normality test statistics"
+    },
+    {
+      "name": "feature_anderson_darling_normal_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band unbiased Anderson-Darling normality test statistics"
+    },
+    {
+      "name": "feature_bazin_fit_amplitude_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band half amplitude of the Bazin function (A) for flux light curve"
+    },
+    {
+      "name": "feature_bazin_fit_amplitude_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band half amplitude of the Bazin function (A) for flux light curve"
+    },
+    {
+      "name": "feature_bazin_fit_baseline_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band baseline of the Bazin function (B) for flux light curve"
+    },
+    {
+      "name": "feature_bazin_fit_baseline_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band baseline of the Bazin function (B) for flux light curve"
+    },
+    {
+      "name": "feature_bazin_fit_fall_time_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band fall time of the Bazin function (tau_fall) for flux light curve"
+    },
+    {
+      "name": "feature_bazin_fit_fall_time_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band fall time of the Bazin function (tau_fall) for flux light curve"
+    },
+    {
+      "name": "feature_bazin_fit_reduced_chi2_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band Bazin fit quality (reduced chi2) for flux light curve"
+    },
+    {
+      "name": "feature_bazin_fit_reduced_chi2_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band Bazin fit quality (reduced chi2) for flux light curve"
+    },
+    {
+      "name": "feature_bazin_fit_reference_time_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band reference time of the Bazin fit (t0) for flux light curve"
+    },
+    {
+      "name": "feature_bazin_fit_reference_time_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band reference time of the Bazin fit (t0) for flux light curve"
+    },
+    {
+      "name": "feature_bazin_fit_rise_time_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band rise time of the Bazin function (tau_rise) for flux light curve"
+    },
+    {
+      "name": "feature_bazin_fit_rise_time_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band rise time of the Bazin function (tau_rise) for flux light curve"
+    },
+    {
+      "name": "feature_beyond_1_std_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band fraction of observations which magnitudes are beyond 1.000e0 standard deviations from the mean magnitude"
+    },
+    {
+      "name": "feature_beyond_1_std_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band fraction of observations which magnitudes are beyond 1.000e0 standard deviations from the mean magnitude"
+    },
+    {
+      "name": "feature_beyond_2_std_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band fraction of observations which magnitudes are beyond 2.000e0 standard deviations from the mean magnitude"
+    },
+    {
+      "name": "feature_beyond_2_std_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band fraction of observations which magnitudes are beyond 2.000e0 standard deviations from the mean magnitude"
+    },
+    {
+      "name": "feature_bins_window1.0_offset0.0_eta_e_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band generalised Von Neummann eta for irregular time-series for binned time-series with window 1 and offset 0"
+    },
+    {
+      "name": "feature_bins_window1.0_offset0.0_eta_e_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band generalised Von Neummann eta for irregular time-series for binned time-series with window 1 and offset 0"
+    },
+    {
+      "name": "feature_bins_window1.0_offset0.0_linear_trend_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band linear trend without respect to observation errors for binned time-series with window 1 and offset 0"
+    },
+    {
+      "name": "feature_bins_window1.0_offset0.0_linear_trend_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band linear trend without respect to observation errors for binned time-series with window 1 and offset 0"
+    },
+    {
+      "name": "feature_bins_window1.0_offset0.0_linear_trend_noise_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band standard deviation of noise for linear fit without respect to observation errors for binned time-series with window 1 and offset 0"
+    },
+    {
+      "name": "feature_bins_window1.0_offset0.0_linear_trend_noise_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band standard deviation of noise for linear fit without respect to observation errors for binned time-series with window 1 and offset 0"
+    },
+    {
+      "name": "feature_bins_window1.0_offset0.0_linear_trend_sigma_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band error of slope of linear fit without respect to observation errors for binned time-series with window 1 and offset 0"
+    },
+    {
+      "name": "feature_bins_window1.0_offset0.0_linear_trend_sigma_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band error of slope of linear fit without respect to observation errors for binned time-series with window 1 and offset 0"
+    },
+    {
+      "name": "feature_bins_window1.0_offset0.0_maximum_slope_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band maximum slope of time-series for binned time-series with window 1 and offset 0"
+    },
+    {
+      "name": "feature_bins_window1.0_offset0.0_maximum_slope_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band maximum slope of time-series for binned time-series with window 1 and offset 0"
+    },
+    {
+      "name": "feature_chi2_flux_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band reduced chi2 as a goodness of constant fit with respect to observation errors for flux light curve"
+    },
+    {
+      "name": "feature_chi2_flux_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band reduced chi2 as a goodness of constant fit with respect to observation errors for flux light curve"
+    },
+    {
+      "name": "feature_chi2_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band reduced chi2 as a goodness of constant fit with respect to observation errors"
+    },
+    {
+      "name": "feature_chi2_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band reduced chi2 as a goodness of constant fit with respect to observation errors"
+    },
+    {
+      "name": "feature_cusum_flux_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band range of cumulative sums of fluxes"
+    },
+    {
+      "name": "feature_cusum_flux_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band range of cumulative sums of fluxes"
+    },
+    {
+      "name": "feature_cusum_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band range of cumulative sums of magnitudes"
+    },
+    {
+      "name": "feature_cusum_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band range of cumulative sums of magnitudes"
+    },
+    {
+      "name": "feature_duration_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band time-series duration"
+    },
+    {
+      "name": "feature_duration_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band time-series duration"
+    },
+    {
+      "name": "feature_eta_e_flux_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band generalised Von Neummann eta for irregular time-series for flux light curve"
+    },
+    {
+      "name": "feature_eta_e_flux_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band generalised Von Neummann eta for irregular time-series for flux light curve"
+    },
+    {
+      "name": "feature_eta_e_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band generalised Von Neummann eta for irregular time-series"
+    },
+    {
+      "name": "feature_eta_e_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band generalised Von Neummann eta for irregular time-series"
+    },
+    {
+      "name": "feature_excess_variance_flux_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band variability amplitude (excess of flux variability over typical error)"
+    },
+    {
+      "name": "feature_excess_variance_flux_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band variability amplitude (excess of flux variability over typical error)"
+    },
+    {
+      "name": "feature_inter_percentile_range_10_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band range between 1.000e1% and 9.000e1% magnitude percentiles"
+    },
+    {
+      "name": "feature_inter_percentile_range_10_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band range between 1.000e1% and 9.000e1% magnitude percentiles"
+    },
+    {
+      "name": "feature_inter_percentile_range_25_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band range between 2.500e1% and 7.500e1% magnitude percentiles"
+    },
+    {
+      "name": "feature_inter_percentile_range_25_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band range between 2.500e1% and 7.500e1% magnitude percentiles"
+    },
+    {
+      "name": "feature_inter_percentile_range_2_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band range between 2.000e0% and 9.800e1% magnitude percentiles"
+    },
+    {
+      "name": "feature_inter_percentile_range_2_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band range between 2.000e0% and 9.800e1% magnitude percentiles"
+    },
+    {
+      "name": "feature_kurtosis_flux_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band unbiased excess kurtosis of fluxes"
+    },
+    {
+      "name": "feature_kurtosis_flux_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band unbiased excess kurtosis of fluxes"
+    },
+    {
+      "name": "feature_kurtosis_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band unbiased excess kurtosis of magnitudes"
+    },
+    {
+      "name": "feature_kurtosis_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band unbiased excess kurtosis of magnitudes"
+    },
+    {
+      "name": "feature_linear_fit_reduced_chi2_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band linear fit quality (reduced chi2)"
+    },
+    {
+      "name": "feature_linear_fit_reduced_chi2_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band linear fit quality (reduced chi2)"
+    },
+    {
+      "name": "feature_linear_fit_slope_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band slope of linear fit"
+    },
+    {
+      "name": "feature_linear_fit_slope_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band slope of linear fit"
+    },
+    {
+      "name": "feature_linear_fit_slope_sigma_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band error of slope of linear fit"
+    },
+    {
+      "name": "feature_linear_fit_slope_sigma_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band error of slope of linear fit"
+    },
+    {
+      "name": "feature_linear_trend_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band linear trend without respect to observation errors"
+    },
+    {
+      "name": "feature_linear_trend_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band linear trend without respect to observation errors"
+    },
+    {
+      "name": "feature_linear_trend_noise_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band standard deviation of noise for linear fit without respect to observation errors"
+    },
+    {
+      "name": "feature_linear_trend_noise_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band standard deviation of noise for linear fit without respect to observation errors"
+    },
+    {
+      "name": "feature_linear_trend_sigma_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band error of slope of linear fit without respect to observation errors"
+    },
+    {
+      "name": "feature_linear_trend_sigma_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band error of slope of linear fit without respect to observation errors"
+    },
+    {
+      "name": "feature_magnitude_percentage_ratio_20_5_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band ratio of 2.000e1% - 8.000e1% and 5.000e0% - 9.500e1% percentile ranges of magnitude sample"
+    },
+    {
+      "name": "feature_magnitude_percentage_ratio_20_5_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band ratio of 2.000e1% - 8.000e1% and 5.000e0% - 9.500e1% percentile ranges of magnitude sample"
+    },
+    {
+      "name": "feature_magnitude_percentage_ratio_40_5_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band ratio of 4.000e1% - 6.000e1% and 5.000e0% - 9.500e1% percentile ranges of magnitude sample"
+    },
+    {
+      "name": "feature_magnitude_percentage_ratio_40_5_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band ratio of 4.000e1% - 6.000e1% and 5.000e0% - 9.500e1% percentile ranges of magnitude sample"
+    },
+    {
+      "name": "feature_maximum_slope_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band maximum slope of time-series"
+    },
+    {
+      "name": "feature_maximum_slope_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band maximum slope of time-series"
+    },
+    {
+      "name": "feature_mean_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band mean magnitude"
+    },
+    {
+      "name": "feature_mean_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band mean magnitude"
+    },
+    {
+      "name": "feature_mean_variance_flux_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band standard deviation of flux to its mean value ratio"
+    },
+    {
+      "name": "feature_mean_variance_flux_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band standard deviation of flux to its mean value ratio"
+    },
+    {
+      "name": "feature_median_absolute_deviation_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band median of absolute magnitude deviation from its median"
+    },
+    {
+      "name": "feature_median_absolute_deviation_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band median of absolute magnitude deviation from its median"
+    },
+    {
+      "name": "feature_median_buffer_range_percentage_10_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band fraction of observations which magnitudes differ from median by no more than 1.000e-1 of amplitude"
+    },
+    {
+      "name": "feature_median_buffer_range_percentage_10_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band fraction of observations which magnitudes differ from median by no more than 1.000e-1 of amplitude"
+    },
+    {
+      "name": "feature_median_buffer_range_percentage_20_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band fraction of observations which magnitudes differ from median by no more than 2.000e-1 of amplitude"
+    },
+    {
+      "name": "feature_median_buffer_range_percentage_20_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band fraction of observations which magnitudes differ from median by no more than 2.000e-1 of amplitude"
+    },
+    {
+      "name": "feature_otsu_lower_to_all_ratio_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band ratio of quantity of observations bellow the threshold given by Otsu method to quantity of all observations"
+    },
+    {
+      "name": "feature_otsu_lower_to_all_ratio_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band ratio of quantity of observations bellow the threshold given by Otsu method to quantity of all observations"
+    },
+    {
+      "name": "feature_otsu_mean_diff_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band difference between mean values of Otsu split subsets"
+    },
+    {
+      "name": "feature_otsu_mean_diff_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band difference between mean values of Otsu split subsets"
+    },
+    {
+      "name": "feature_otsu_std_lower_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band standard deviation for observations below the threshold given by Otsu method"
+    },
+    {
+      "name": "feature_otsu_std_lower_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band standard deviation for observations below the threshold given by Otsu method"
+    },
+    {
+      "name": "feature_otsu_std_upper_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band standard deviation for observations above the threshold given by Otsu method"
+    },
+    {
+      "name": "feature_otsu_std_upper_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band standard deviation for observations above the threshold given by Otsu method"
+    },
+    {
+      "name": "feature_percent_amplitude_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band maximum absolute deviation of magnitude from its median"
+    },
+    {
+      "name": "feature_percent_amplitude_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band maximum absolute deviation of magnitude from its median"
+    },
+    {
+      "name": "feature_percent_difference_magnitude_percentile_10_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band ratio of inter-percentile 1.000e1% - 9.000e1% range of magnitude to its mdeian"
+    },
+    {
+      "name": "feature_percent_difference_magnitude_percentile_10_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band ratio of inter-percentile 1.000e1% - 9.000e1% range of magnitude to its mdeian"
+    },
+    {
+      "name": "feature_percent_difference_magnitude_percentile_5_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band ratio of inter-percentile 5.000e0% - 9.500e1% range of magnitude to its mdeian"
+    },
+    {
+      "name": "feature_percent_difference_magnitude_percentile_5_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band ratio of inter-percentile 5.000e0% - 9.500e1% range of magnitude to its mdeian"
+    },
+    {
+      "name": "feature_period_0_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band period of the 1st highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_0_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band period of the 1st highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_1_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band period of the 2nd highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_1_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band period of the 2nd highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_2_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band period of the 3rd highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_2_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band period of the 3rd highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_3_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band period of the 4th highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_3_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band period of the 4th highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_4_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band period of the 5th highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_4_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band period of the 5th highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_s_to_n_0_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band Spectral density to spectral density standard deviation ratio of the 1st highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_s_to_n_0_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band Spectral density to spectral density standard deviation ratio of the 1st highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_s_to_n_1_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band Spectral density to spectral density standard deviation ratio of the 2nd highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_s_to_n_1_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band Spectral density to spectral density standard deviation ratio of the 2nd highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_s_to_n_2_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band Spectral density to spectral density standard deviation ratio of the 3rd highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_s_to_n_2_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band Spectral density to spectral density standard deviation ratio of the 3rd highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_s_to_n_3_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band Spectral density to spectral density standard deviation ratio of the 4th highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_s_to_n_3_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band Spectral density to spectral density standard deviation ratio of the 4th highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_s_to_n_4_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band Spectral density to spectral density standard deviation ratio of the 5th highest peak of periodogram"
+    },
+    {
+      "name": "feature_period_s_to_n_4_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band Spectral density to spectral density standard deviation ratio of the 5th highest peak of periodogram"
+    },
+    {
+      "name": "feature_periodogram_amplitude_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band half of the interval between maximum and minimum magnitude of periodogram"
+    },
+    {
+      "name": "feature_periodogram_amplitude_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band half of the interval between maximum and minimum magnitude of periodogram"
+    },
+    {
+      "name": "feature_periodogram_beyond_2_std_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band fraction of observations which magnitudes are beyond 2.000e0 standard deviations from the mean magnitude of periodogram"
+    },
+    {
+      "name": "feature_periodogram_beyond_2_std_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band fraction of observations which magnitudes are beyond 2.000e0 standard deviations from the mean magnitude of periodogram"
+    },
+    {
+      "name": "feature_periodogram_beyond_3_std_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band fraction of observations which magnitudes are beyond 3.000e0 standard deviations from the mean magnitude of periodogram"
+    },
+    {
+      "name": "feature_periodogram_beyond_3_std_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band fraction of observations which magnitudes are beyond 3.000e0 standard deviations from the mean magnitude of periodogram"
+    },
+    {
+      "name": "feature_periodogram_standard_deviation_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band standard deviation of magnitude sample of periodogram"
+    },
+    {
+      "name": "feature_periodogram_standard_deviation_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band standard deviation of magnitude sample of periodogram"
+    },
+    {
+      "name": "feature_skew_flux_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band skew of flux sample"
+    },
+    {
+      "name": "feature_skew_flux_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band skew of flux sample"
+    },
+    {
+      "name": "feature_skew_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band skew of magnitude sample"
+    },
+    {
+      "name": "feature_skew_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band skew of magnitude sample"
+    },
+    {
+      "name": "feature_standard_deviation_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band standard deviation of magnitude sample"
+    },
+    {
+      "name": "feature_standard_deviation_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band standard deviation of magnitude sample"
+    },
+    {
+      "name": "feature_stetson_k_flux_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band normalized weighted deviation of flux from its weighted mean"
+    },
+    {
+      "name": "feature_stetson_k_flux_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band normalized weighted deviation of flux from its weighted mean"
+    },
+    {
+      "name": "feature_stetson_k_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band normalized weighted deviation of magnitude from its weighted mean"
+    },
+    {
+      "name": "feature_stetson_k_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band normalized weighted deviation of magnitude from its weighted mean"
+    },
+    {
+      "name": "feature_villar_fit_amplitude_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band half amplitude of the Villar function (A) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_amplitude_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band half amplitude of the Villar function (A) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_baseline_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band baseline of the Villar function (c) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_baseline_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band baseline of the Villar function (c) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_fall_time_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band decline time of the Villar function (tau_fall) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_fall_time_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band decline time of the Villar function (tau_fall) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_plateau_duration_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band plateau duration of the Villar function (gamma) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_plateau_duration_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band plateau duration of the Villar function (gamma) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_plateau_rel_amplitude_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band relative plateau amplitude of the Villar function (nu = beta gamma / A) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_plateau_rel_amplitude_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band relative plateau amplitude of the Villar function (nu = beta gamma / A) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_reduced_chi2_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band Villar fit quality (reduced chi2) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_reduced_chi2_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band Villar fit quality (reduced chi2) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_reference_time_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band reference time of the Villar function (t_0) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_reference_time_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band reference time of the Villar function (t_0) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_rise_time_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band rise time of the Villar function (tau_rise) for flux light curve"
+    },
+    {
+      "name": "feature_villar_fit_rise_time_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band rise time of the Villar function (tau_rise) for flux light curve"
+    },
+    {
+      "name": "feature_weighted_mean_magn_g",
+      "type": "float",
+      "origin": "Filter",
+      "description": "g-band magnitude averaged weighted by inverse square error"
+    },
+    {
+      "name": "feature_weighted_mean_magn_r",
+      "type": "float",
+      "origin": "Filter",
+      "description": "R-band magnitude averaged weighted by inverse square error"
+    },
+    {
+      "name": "gApFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Aperture flux from g filter stack detection."
+    },
+    {
+      "name": "gApMag_gKronMag",
+      "type": "float",
+      "origin": "Filter",
+      "description": "gApMag_gKronMag."
+    },
+    {
+      "name": "gExtNSigma",
+      "type": "float",
+      "origin": "Filter",
+      "description": "An extendedness measure for the g filter stack detection based on the deviation between PSF and Kron (1980) magnitudes normalized by the PSF magnitude uncertainty."
+    },
+    {
+      "name": "gKronFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Kron (1980) flux from g filter stack detection."
+    },
+    {
+      "name": "gKronRad",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Kron (1980) radius from g filter stack detection."
+    },
+    {
+      "name": "gmomentR1",
+      "type": "float",
+      "origin": "Filter",
+      "description": "First radial moment for g filter stack detection."
+    },
+    {
+      "name": "gmomentRH",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Half radial moment (r^0.5 weighting) for g filter stack detection."
+    },
+    {
+      "name": "gmomentXX",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_xx for g filter stack detection."
+    },
+    {
+      "name": "gmomentXY",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_xy for g filter stack detection."
+    },
+    {
+      "name": "gmomentYY",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_yy for g filter stack detection."
+    },
+    {
+      "name": "gPSFFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "PSF flux from g filter stack detection."
+    },
+    {
+      "name": "horizons_targetname",
+      "type": "str",
+      "origin": "Filter",
+      "description": "The name of this object in the JPL Horizons database."
+    },
+    {
+      "name": "i-z",
+      "type": "float",
+      "origin": "Filter",
+      "description": "i-z."
+    },
+    {
+      "name": "iApFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Aperture flux from i filter stack detection."
+    },
+    {
+      "name": "iApMag_iKronMag",
+      "type": "float",
+      "origin": "Filter",
+      "description": "iApMag_iKronMag."
+    },
+    {
+      "name": "iExtNSigma",
+      "type": "float",
+      "origin": "Filter",
+      "description": "An extendedness measure for the i filter stack detection based on the deviation between PSF and Kron (1980) magnitudes normalized by the PSF magnitude uncertainty."
+    },
+    {
+      "name": "iKronFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Kron (1980) flux from i filter stack detection."
+    },
+    {
+      "name": "iKronRad",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Kron (1980) radius from i filter stack detection."
+    },
+    {
+      "name": "imomentR1",
+      "type": "float",
+      "origin": "Filter",
+      "description": "First radial moment for i filter stack detection."
+    },
+    {
+      "name": "imomentRH",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Half radial moment (r^0.5 weighting) for i filter stack detection."
+    },
+    {
+      "name": "imomentXX",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_xx for i filter stack detection."
+    },
+    {
+      "name": "imomentXY",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_xy for i filter stack detection."
+    },
+    {
+      "name": "imomentYY",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_yy for i filter stack detection."
+    },
+    {
+      "name": "iPSFFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "PSF flux from i filter stack detection."
+    },
+    {
+      "name": "is_corrected",
+      "type": "str",
+      "origin": "ANTARES",
+      "description": "true' if we were able to correct this locus's lightcurve otherwise  'false'."
+    },
+    {
+      "name": "LAISS_RFC_anomaly_score",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Calculated anomaly score (e.g., 75.6). From RFC model, objects are tagged as anomalous if \"Other\" (anomaly) classification is >0.5 at any point during light curve evolution."
+    },
+    {
+      "name": "newest_alert_id",
+      "type": "str",
+      "origin": "ANTARES",
+      "description": "Most recent Alert on this Locus."
+    },
+    {
+      "name": "newest_alert_magnitude",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Magnitude of the most recent alert on this Locus"
+    },
+    {
+      "name": "newest_alert_observation_time",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Observation time [MJD] of the most recent alert on this Locus"
+    },
+    {
+      "name": "num_alerts",
+      "type": "int",
+      "origin": "ANTARES",
+      "description": "Number of total Alerts on a Locus."
+    },
+    {
+      "name": "num_mag_values",
+      "type": "int",
+      "origin": "ANTARES",
+      "description": "Number of magnitude readings on a Locus."
+    },
+    {
+      "name": "Nurzhans_interest_score",
+      "type": "float",
+      "origin": "Filter",
+      "description": "interestingness of the alert by algorithm XYZ"
+    },
+    {
+      "name": "Nurzhans_interest_score",
+      "type": "float",
+      "origin": "Filter",
+      "description": "interestingness of the alert by algorithm XYZ"
+    },
+    {
+      "name": "objID",
+      "type": "int",
+      "origin": "Filter",
+      "description": "Unique object identifier."
+    },
+    {
+      "name": "objName",
+      "type": "str",
+      "origin": "Filter",
+      "description": "IAU name for this object."
+    },
+    {
+      "name": "oldest_alert_id",
+      "type": "str",
+      "origin": "ANTARES",
+      "description": "Oldest alert on this Locus."
+    },
+    {
+      "name": "oldest_alert_magnitude",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Magnitude of the oldest alert on this Locus."
+    },
+    {
+      "name": "oldest_alert_observation_time",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Observation time [MJD] of the oldest alert on this Locus"
+    },
+    {
+      "name": "raMean",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Right ascension from single epoch detections (weighted mean) in equinox J2000 at the mean epoch given by epochMean."
+    },
+    {
+      "name": "rApFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Aperture flux from r filter stack detection."
+    },
+    {
+      "name": "rApMag_rKronMag",
+      "type": "float",
+      "origin": "Filter",
+      "description": "rApMag_rKronMag."
+    },
+    {
+      "name": "replaced_by",
+      "type": "str",
+      "origin": "ANTARES",
+      "description": "Locus ID which replaces this one if any."
+    },
+    {
+      "name": "rExtNSigma",
+      "type": "float",
+      "origin": "Filter",
+      "description": "An extendedness measure for the r filter stack detection based on the deviation between PSF and Kron (1980) magnitudes normalized by the PSF magnitude uncertainty."
+    },
+    {
+      "name": "rKronFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Kron (1980) flux from r filter stack detection."
+    },
+    {
+      "name": "rKronRad",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Kron (1980) radius from r filter stack detection."
+    },
+    {
+      "name": "rmomentR1",
+      "type": "float",
+      "origin": "Filter",
+      "description": "First radial moment for r filter stack detection."
+    },
+    {
+      "name": "rmomentRH",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Half radial moment (r^0.5 weighting) for r filter stack detection."
+    },
+    {
+      "name": "rmomentXX",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_xx for r filter stack detection."
+    },
+    {
+      "name": "rmomentXY",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_xy for r filter stack detection."
+    },
+    {
+      "name": "rmomentYY",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_yy for r filter stack detection."
+    },
+    {
+      "name": "rPSFFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "PSF flux from r filter stack detection."
+    },
+    {
+      "name": "survey.lsst.dia_object_id",
+      "type": "str[]",
+      "origin": "ANTARES",
+      "description": "List of LSST Survey diaObjectIds associated with this Locus."
+    },
+    {
+      "name": "survey.lsst.ss_object_id",
+      "type": "str[]",
+      "origin": "ANTARES",
+      "description": "List of LSST solar system object IDs associated with this Locus."
+    },
+    {
+      "name": "survey.ztf.field",
+      "type": "int[]",
+      "origin": "ANTARES",
+      "description": "Field IDs associated with this Locus."
+    },
+    {
+      "name": "survey.ztf.id",
+      "type": "str[]",
+      "origin": "ANTARES",
+      "description": "List of ZTF Survey IDs associated with this Locus."
+    },
+    {
+      "name": "survey.ztf.rcid",
+      "type": "int[]",
+      "origin": "ANTARES",
+      "description": "Readout channel IDs associated with this Locus."
+    },
+    {
+      "name": "survey.ztf.ssnamenr",
+      "type": "str[]",
+      "origin": "ANTARES",
+      "description": "Names of nearest known solar system objects [from MPC archive] associated with this Locus."
+    },
+    {
+      "name": "vpdf_extreme_bright",
+      "type": "str",
+      "origin": "Filter",
+      "description": "Is alert delta mag brighter than XXX% of alerts"
+    },
+    {
+      "name": "vpdf_extreme_faint",
+      "type": "str",
+      "origin": "Filter",
+      "description": "Is alert delta mag fainter than XXX% of alerts"
+    },
+    {
+      "name": "vpdf_extreme_version",
+      "type": "str",
+      "origin": "Filter",
+      "description": "Version of vpdf filter"
+    },
+    {
+      "name": "yApFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Aperture flux from y filter stack detection."
+    },
+    {
+      "name": "yApMag_yKronMag",
+      "type": "float",
+      "origin": "Filter",
+      "description": "yApMag_yKronMag."
+    },
+    {
+      "name": "yExtNSigma",
+      "type": "float",
+      "origin": "Filter",
+      "description": "An extendedness measure for the y filter stack detection based on the deviation between PSF and Kron (1980) magnitudes normalized by the PSF magnitude uncertainty."
+    },
+    {
+      "name": "yKronFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Kron (1980) flux from y filter stack detection."
+    },
+    {
+      "name": "yKronRad",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Kron (1980) radius from y filter stack detection."
+    },
+    {
+      "name": "ymomentR1",
+      "type": "float",
+      "origin": "Filter",
+      "description": "First radial moment for y filter stack detection."
+    },
+    {
+      "name": "ymomentRH",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Half radial moment (r^0.5 weighting) for y filter stack detection."
+    },
+    {
+      "name": "ymomentXX",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_xx for y filter stack detection."
+    },
+    {
+      "name": "ymomentXY",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_xy for y filter stack detection."
+    },
+    {
+      "name": "ymomentYY",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_yy for y filter stack detection."
+    },
+    {
+      "name": "yPSFFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "PSF flux from y filter stack detection."
+    },
+    {
+      "name": "zApFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Aperture flux from z filter stack detection."
+    },
+    {
+      "name": "zApMag_zKronMag",
+      "type": "float",
+      "origin": "Filter",
+      "description": "zApMag_zKronMag."
+    },
+    {
+      "name": "zExtNSigma",
+      "type": "float",
+      "origin": "Filter",
+      "description": "An extendedness measure for the z filter stack detection based on the deviation between PSF and Kron (1980) magnitudes normalized by the PSF magnitude uncertainty."
+    },
+    {
+      "name": "zKronFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Kron (1980) flux from z filter stack detection."
+    },
+    {
+      "name": "zKronRad",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Kron (1980) radius from z filter stack detection."
+    },
+    {
+      "name": "zmomentR1",
+      "type": "float",
+      "origin": "Filter",
+      "description": "First radial moment for z filter stack detection."
+    },
+    {
+      "name": "zmomentRH",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Half radial moment (r^0.5 weighting) for z filter stack detection."
+    },
+    {
+      "name": "zmomentXX",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_xx for z filter stack detection."
+    },
+    {
+      "name": "zmomentXY",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_xy for z filter stack detection."
+    },
+    {
+      "name": "zmomentYY",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Second moment M_yy for z filter stack detection."
+    },
+    {
+      "name": "zPSFFlux",
+      "type": "float",
+      "origin": "Filter",
+      "description": "PSF flux from z filter stack detection."
+    },
+    {
+      "name": "ztf_object_id",
+      "type": "str",
+      "origin": "ANTARES",
+      "description": "ZTF Object ID"
+    },
+    {
+      "name": "ztf_ssnamenr",
+      "type": "str",
+      "origin": "ANTARES",
+      "description": "Name of nearest known solar system object [from MPC archive]"
+    }
+  ],
+  "alert": [
+    {
+      "name": "ant_dec",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "dec coordinate. Defined on ZTF and LSST candidates where applicable."
+    },
+    {
+      "name": "ant_input_msg_time",
+      "type": "int",
+      "origin": "ANTARES",
+      "description": "UNIX timestamp of input message. eg, Kafka msg timestamp. Note: This property was a duplicate of ant_time_received"
+    },
+    {
+      "name": "ant_mag",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Magnitude computed on the difference image by the survey"
+    },
+    {
+      "name": "ant_mag_corrected",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": " Magnitude corrected for the subtracted flux (required for persistent variable sources). Note: This property is calculated when accessing the lightcurve and is no longer stored in the alert."
+    },
+    {
+      "name": "ant_magerr",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Corresponding error for ant_mag"
+    },
+    {
+      "name": "ant_magerr_corrected",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Corresponding error for ant_mag_corrected.  Note: This property is calculated when accessing the lightcurve and is no longer stored in the alert."
+    },
+    {
+      "name": "ant_maglim",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Magnitude upper limit"
+    },
+    {
+      "name": "ant_magllim_corrected",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Magnitude lower limit for a persistent variable source with a non-detection. Note: This property is calculated when accessing the lightcurve and is no longer stored in the alert."
+    },
+    {
+      "name": "ant_magulim_corrected",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Magnitude upper limit for a persistent variable source with a non-detection. Note: This property is calculated when accessing the lightcurve and is no longer stored in the alert."
+    },
+    {
+      "name": "ant_mjd",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "Modified Julian Date of observation"
+    },
+    {
+      "name": "ant_passband",
+      "type": "str",
+      "origin": "ANTARES",
+      "description": "One of: 'g', 'R', 'i'"
+    },
+    {
+      "name": "ant_ra",
+      "type": "float",
+      "origin": "ANTARES",
+      "description": "ra coordinate. Defined on ZTF and LSST candidates where applicable."
+    },
+    {
+      "name": "ant_survey",
+      "type": "int",
+      "origin": "ANTARES",
+      "description": "Origin or type of the Alert. 1 = ZTF Candidate, 2 = ZTF Upper Limit, 4 = LSST."
+    },
+    {
+      "name": "ant_time_received",
+      "type": "int",
+      "origin": "ANTARES",
+      "description": "UNIX timestamp when ANTARES received the alert"
+    },
+    {
+      "name": "horizons_absolutemag",
+      "type": "float",
+      "origin": "Filter",
+      "description": "The absolute magnitude of the object (from JPL Horizons field 'H')."
+    },
+    {
+      "name": "horizons_dec_posunc_3sig_arcsec",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Uncertainty in declination. Output values are the  formal +/- 3 standard-deviations (sigmas) around nominal position. (Units are arcseconds)."
+    },
+    {
+      "name": "horizons_heliodist_au",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Heliocentric range (light-time adjusted) of the target center or surface point at the instant light seen by the observer at print-time would have left the target (print-time minus down-leg light-time). The Sun-to-target distance traveled by a ray of light emanating from the center of the Sun that reaches the target at some instant and is recordable by the observer one down-leg light-time later at print-time. (From JPL Horizons field 'r'; units are AU)."
+    },
+    {
+      "name": "horizons_observerdist_au",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Range of the target center or surface point with respect to the observer at the instant light seen by the observer at print-time would have left the target (print-time minus down-leg light-time); the distance traveled by a light ray emanating from the the target and recorded by the observer at print-time. (From JPL Horizons field 'delta'; units are AU)."
+    },
+    {
+      "name": "horizons_predictedmagnitude",
+      "type": "float",
+      "origin": "Filter",
+      "description": "The predicted magnitude of the object (from JPL Horizons field 'V')."
+    },
+    {
+      "name": "horizons_ra_posunc_3sig_arcsec",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Uncertainty in right ascension. Output values are the  formal +/- 3 standard-deviations (sigmas) around nominal position. (Units are arcseconds)."
+    },
+    {
+      "name": "horizons_slopeparameter",
+      "type": "float",
+      "origin": "Filter",
+      "description": "The magnitude slope parameter (from JPL Horizons field 'G')."
+    },
+    {
+      "name": "horizons_solarelongation",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Solar elongation."
+    },
+    {
+      "name": "horizons_solarphaseangle",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Solar phase angle."
+    },
+    {
+      "name": "horizons_true_anomaly",
+      "type": "float",
+      "origin": "Filter",
+      "description": "Apparent true anomaly angle of the target’s heliocentric orbit position; the angle in the target’s instantaneous orbit plane from the orbital periapse direction to the target, measured positively in the direction of motion. The position of the target is taken to be at the moment light seen by the observer at print-time would have left the center of the object. That is, the heliocentric position of the target used to compute the true anomaly is one down-leg light-time prior to the print-time. (Units are degrees)"
+    },
+    {
+      "name": "lsst_diaObject_dec",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Declination coordinate of the position of the object [deg]"
+    },
+    {
+      "name": "lsst_diaObject_decErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of dec [deg]"
+    },
+    {
+      "name": "lsst_diaObject_diaObjectId",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Unique identifier of this DiaObject"
+    },
+    {
+      "name": "lsst_diaObject_firstDiaSourceMjdTai",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Time of the first diaSource, expressed as Modified Julian Date, International Atomic Time"
+    },
+    {
+      "name": "lsst_diaObject_g_fpFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean forced photometry flux for g filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_g_fpFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of g_fpFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_g_psfFluxErrMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Mean of the g band flux errors [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_g_psfFluxMax",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum observed g band fluxes [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_g_psfFluxMaxSlope",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum slope between g band flux obsevations max(delta_flux/delta_time) [nJy/d]"
+    },
+    {
+      "name": "lsst_diaObject_g_psfFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean point-source model magnitude for g filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_g_psfFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of g_psfFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_g_psfFluxMin",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Minimum observed g band fluxes [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_g_psfFluxNdata",
+      "type": "int",
+      "origin": "LSST",
+      "description": "The number of g-band data points"
+    },
+    {
+      "name": "lsst_diaObject_g_psfFluxSigma",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard deviation of the distribution of g_psfFlux [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_g_scienceFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean forced photometry flux for g filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_g_scienceFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of g_scienceFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_i_fpFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean forced photometry flux for i filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_i_fpFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of i_fpFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_i_psfFluxErrMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Mean of the i band flux errors [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_i_psfFluxMax",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum observed i band fluxes [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_i_psfFluxMaxSlope",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum slope between i band flux obsevations max(delta_flux/delta_time) [nJy/d]"
+    },
+    {
+      "name": "lsst_diaObject_i_psfFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean point-source model magnitude for i filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_i_psfFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of i_psfFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_i_psfFluxMin",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Minimum observed i band fluxes [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_i_psfFluxNdata",
+      "type": "int",
+      "origin": "LSST",
+      "description": "The number of i-band data points"
+    },
+    {
+      "name": "lsst_diaObject_i_psfFluxSigma",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard deviation of the distribution of i_psfFlux [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_i_scienceFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean forced photometry flux for i filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_i_scienceFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of i_scienceFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_lastDiaSourceMjdTai",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Time of the most recent non-forced DIASource for this object, expressed as Modified Julian Date, International Atomic Time"
+    },
+    {
+      "name": "lsst_diaObject_nDiaSources",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Total number of DiaSources associated with this DiaObject"
+    },
+    {
+      "name": "lsst_diaObject_r_fpFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean forced photometry flux for r filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_r_fpFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of r_fpFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_r_psfFluxErrMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Mean of the r band flux errors [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_r_psfFluxMax",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum observed r band fluxes [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_r_psfFluxMaxSlope",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum slope between r band flux obsevations max(delta_flux/delta_time) [nJy/d]"
+    },
+    {
+      "name": "lsst_diaObject_r_psfFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean point-source model magnitude for r filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_r_psfFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of r_psfFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_r_psfFluxMin",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Minimum observed r band fluxes [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_r_psfFluxNdata",
+      "type": "int",
+      "origin": "LSST",
+      "description": "The number of r-band data points"
+    },
+    {
+      "name": "lsst_diaObject_r_psfFluxSigma",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard deviation of the distribution of r_psfFlux [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_r_scienceFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean forced photometry flux for r filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_r_scienceFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of r_scienceFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_ra",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Right ascension coordinate of the position of the object [deg]"
+    },
+    {
+      "name": "lsst_diaObject_ra_dec_Cov",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Covariance between ra and dec [deg**2]"
+    },
+    {
+      "name": "lsst_diaObject_raErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of ra [deg]"
+    },
+    {
+      "name": "lsst_diaObject_u_fpFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean forced photometry flux for u filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_u_fpFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of u_fpFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_u_psfFluxErrMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Mean of the u band flux errors [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_u_psfFluxMax",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum observed u band fluxes [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_u_psfFluxMaxSlope",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum slope between u band flux obsevations max(delta_flux/delta_time) [nJy/d]"
+    },
+    {
+      "name": "lsst_diaObject_u_psfFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean point-source model magnitude for u filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_u_psfFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of u_psfFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_u_psfFluxMin",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Minimum observed u band fluxes [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_u_psfFluxNdata",
+      "type": "int",
+      "origin": "LSST",
+      "description": "The number of u-band data points"
+    },
+    {
+      "name": "lsst_diaObject_u_psfFluxSigma",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard deviation of the distribution of u_psfFlux [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_u_scienceFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean forced photometry flux for u filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_u_scienceFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of u_scienceFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_validityStartMjdTai",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Processing time when validity of this diaObject starts, expressed as Modified Julian Date, International Atomic Time"
+    },
+    {
+      "name": "lsst_diaObject_y_fpFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean forced photometry flux for y filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_y_fpFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of y_fpFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_y_psfFluxErrMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Mean of the y band flux errors [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_y_psfFluxMax",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum observed y band fluxes [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_y_psfFluxMaxSlope",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum slope between y band flux obsevations max(delta_flux/delta_time) [nJy/d]"
+    },
+    {
+      "name": "lsst_diaObject_y_psfFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean point-source model magnitude for y filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_y_psfFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of y_psfFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_y_psfFluxMin",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Minimum observed y band fluxes [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_y_psfFluxNdata",
+      "type": "int",
+      "origin": "LSST",
+      "description": "The number of y-band data points"
+    },
+    {
+      "name": "lsst_diaObject_y_psfFluxSigma",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard deviation of the distribution of y_psfFlux [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_y_scienceFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean forced photometry flux for y filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_y_scienceFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of y_scienceFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_z_fpFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean forced photometry flux for z filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_z_fpFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of z_fpFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_z_psfFluxErrMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Mean of the z band flux errors [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_z_psfFluxMax",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum observed z band fluxes [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_z_psfFluxMaxSlope",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum slope between z band flux obsevations max(delta_flux/delta_time) [nJy/d]"
+    },
+    {
+      "name": "lsst_diaObject_z_psfFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean point-source model magnitude for z filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_z_psfFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of z_psfFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_z_psfFluxMin",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Minimum observed z band fluxes [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_z_psfFluxNdata",
+      "type": "int",
+      "origin": "LSST",
+      "description": "The number of z-band data points."
+    },
+    {
+      "name": "lsst_diaObject_z_psfFluxSigma",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard deviation of the distribution of z_psfFlux [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_z_scienceFluxMean",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Weighted mean forced photometry flux for z filter [nJy]"
+    },
+    {
+      "name": "lsst_diaObject_z_scienceFluxMeanErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Standard error of z_scienceFluxMean [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_apFlux",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Flux in a 12 pixel radius aperture on the difference image [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_apFlux_flag",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "General aperture flux algorithm failure flag; set if anything went wrong when measuring aperture fluxes. Another apFlux flag field should also be set to provide more information"
+    },
+    {
+      "name": "lsst_diaSource_apFlux_flag_apertureTruncated",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Aperture did not fit within measurement image"
+    },
+    {
+      "name": "lsst_diaSource_apFluxErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Estimated uncertainty of apFlux [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_band",
+      "type": "str",
+      "origin": "LSST",
+      "description": "Filter band this source was observed with"
+    },
+    {
+      "name": "lsst_diaSource_bboxSize",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Size of the square bounding box that fully contains the detection footprint [pixel]"
+    },
+    {
+      "name": "lsst_diaSource_centroid_flag",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "General centroid algorithm failure flag; set if anything went wrong when fitting the centroid. Another centroid flag field should also be set to provide more information"
+    },
+    {
+      "name": "lsst_diaSource_dec",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Declination coordinate of the center of this diaSource [deg]"
+    },
+    {
+      "name": "lsst_diaSource_decErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of dec [deg]"
+    },
+    {
+      "name": "lsst_diaSource_detector",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Id of the detector where this diaSource was measured. Datatype short instead of byte because of DB concerns about unsigned bytes"
+    },
+    {
+      "name": "lsst_diaSource_diaObjectId",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Id of the diaObject this source was associated with, if any. If not, it is set to NULL (each diaSource will be associated with either a diaObject or ssObject)"
+    },
+    {
+      "name": "lsst_diaSource_diaSourceId",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Unique identifier of this DiaSource"
+    },
+    {
+      "name": "lsst_diaSource_dipoleAngle",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum likelihood fit of the angle between the meridian through the centroid and the dipole direction (bearing, from negative to positive lobe) [deg]"
+    },
+    {
+      "name": "lsst_diaSource_dipoleChi2",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Chi^2 statistic of the model fit"
+    },
+    {
+      "name": "lsst_diaSource_dipoleFitAttempted",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Attempted to fit a dipole model to this source"
+    },
+    {
+      "name": "lsst_diaSource_dipoleFluxDiff",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum likelihood value for the difference of absolute fluxes of the two lobes for a dipole model [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_dipoleFluxDiffErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of dipoleFluxDiff [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_dipoleLength",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum likelihood value for the lobe separation in dipole model [arcsec]"
+    },
+    {
+      "name": "lsst_diaSource_dipoleMeanFlux",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum likelihood value for the mean absolute flux of the two lobes for a dipole model [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_dipoleMeanFluxErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of dipoleMeanFlux [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_dipoleNdata",
+      "type": "int",
+      "origin": "LSST",
+      "description": "The number of data points (pixels) used to fit the model"
+    },
+    {
+      "name": "lsst_diaSource_extendedness",
+      "type": "float",
+      "origin": "LSST",
+      "description": "A measure of extendedness, computed by comparing an object's moment-based traced radius to the PSF moments. extendedness = 1 implies a high degree of confidence that the source is extended. extendedness = 0 implies a high degree of confidence that the source is point-like"
+    },
+    {
+      "name": "lsst_diaSource_forced_PsfFlux_flag",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Forced PSF photometry on science image failed. Another forced_PsfFlux flag field should also be set to provide more information"
+    },
+    {
+      "name": "lsst_diaSource_forced_PsfFlux_flag_edge",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Forced PSF flux on science image was too close to the edge of the image to use the full PSF model"
+    },
+    {
+      "name": "lsst_diaSource_forced_PsfFlux_flag_noGoodPixels",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Forced PSF flux not enough non-rejected pixels in data to attempt the fit"
+    },
+    {
+      "name": "lsst_diaSource_glint_trail",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "This flag is set if the source is part of a glint trail"
+    },
+    {
+      "name": "lsst_diaSource_isDipole",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Source well fit by a dipole"
+    },
+    {
+      "name": "lsst_diaSource_isNegative",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Source was detected as significantly negative"
+    },
+    {
+      "name": "lsst_diaSource_ixx",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Adaptive second moment of the source intensity [nJy.arcsec**2]"
+    },
+    {
+      "name": "lsst_diaSource_ixxPSF",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Adaptive second moment for the PSF [nJy.arcsec**2]"
+    },
+    {
+      "name": "lsst_diaSource_ixy",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Adaptive second moment of the source intensity [nJy.arcsec**2]"
+    },
+    {
+      "name": "lsst_diaSource_ixyPSF",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Adaptive second moment for the PSF [nJy.arcsec**2]"
+    },
+    {
+      "name": "lsst_diaSource_iyy",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Adaptive second moment of the source intensity [nJy.arcsec**2]"
+    },
+    {
+      "name": "lsst_diaSource_iyyPSF",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Adaptive second moment for the PSF [nJy.arcsec**2]"
+    },
+    {
+      "name": "lsst_diaSource_midpointMjdTai",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Effective mid-visit time for this diaSource, expressed as Modified Julian Date, International Atomic Time [d]"
+    },
+    {
+      "name": "lsst_diaSource_parentDiaSourceId",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Id of the parent diaSource this diaSource has been deblended from, if any"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "General pixel flags failure; set if anything went wrong when setting pixels flags from this footprint's mask. This implies that some pixelFlags for this source may be incorrectly set to False"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_bad",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Bad pixel in the DiaSource footprint"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_cr",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Cosmic ray in the DiaSource footprint"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_crCenter",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Cosmic ray in the 3x3 region around the centroid"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_edge",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Some of the source footprint is outside usable exposure region (masked EDGE or centroid off image)"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_injected",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Injection in the DiaSource footprint"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_injected_template",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Template injection in the DiaSource footprint"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_injected_templateCenter",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Template injection in the 3x3 region around the centroid"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_injectedCenter",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Injection in the 3x3 region around the centroid"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_interpolated",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Interpolated pixel in the DiaSource footprint"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_interpolatedCenter",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Interpolated pixel in the 3x3 region around the centroid"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_nodata",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "NO_DATA pixel in the source footprint"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_nodataCenter",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "NO_DATA pixel in the 3x3 region around the centroid"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_offimage",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "DiaSource center is off image"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_saturated",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Saturated pixel in the DiaSource footprint"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_saturatedCenter",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Saturated pixel in the 3x3 region around the centroid"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_streak",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Streak in the DiaSource footprint"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_streakCenter",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Streak in the 3x3 region around the centroid"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_suspect",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "DiaSource's footprint includes suspect pixels"
+    },
+    {
+      "name": "lsst_diaSource_pixelFlags_suspectCenter",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Suspect pixel in the 3x3 region around the centroid"
+    },
+    {
+      "name": "lsst_diaSource_psfChi2",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Chi^2 statistic of the point source model fit"
+    },
+    {
+      "name": "lsst_diaSource_psfFlux",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Flux for Point Source model. Note this actually measures the flux difference between the template and the visit image [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_psfFlux_flag",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Failure to derive linear least-squares fit of psf model. Another psfFlux flag field should also be set to provide more information"
+    },
+    {
+      "name": "lsst_diaSource_psfFlux_flag_edge",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Object was too close to the edge of the image to use the full PSF model"
+    },
+    {
+      "name": "lsst_diaSource_psfFlux_flag_noGoodPixels",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Not enough non-rejected pixels in data to attempt the fit"
+    },
+    {
+      "name": "lsst_diaSource_psfFluxErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of psfFlux [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_psfLnL",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Natural log likelihood of the observed data given the point source model"
+    },
+    {
+      "name": "lsst_diaSource_psfNdata",
+      "type": "int",
+      "origin": "LSST",
+      "description": "The number of data points (pixels) used to fit the point source model"
+    },
+    {
+      "name": "lsst_diaSource_ra",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Right ascension coordinate of the center of this diaSource [deg]"
+    },
+    {
+      "name": "lsst_diaSource_ra_dec_Cov",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Covariance between ra and dec [deg**2]"
+    },
+    {
+      "name": "lsst_diaSource_raErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of ra [deg]"
+    },
+    {
+      "name": "lsst_diaSource_reliability",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Probability (0-1) that the diaSource is astrophysical, derived from a machine learning model"
+    },
+    {
+      "name": "lsst_diaSource_scienceFlux",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Forced photometry flux for a point source model measured on the visit image centered at DiaSource position [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_scienceFluxErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Estimated uncertainty of scienceFlux [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_shape_flag",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "General source shape algorithm failure flag; set if anything went wrong when measuring the shape. Another shape flag field should also be set to provide more information"
+    },
+    {
+      "name": "lsst_diaSource_shape_flag_no_pixels",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "No pixels to measure shape"
+    },
+    {
+      "name": "lsst_diaSource_shape_flag_not_contained",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "Center not contained in footprint bounding box"
+    },
+    {
+      "name": "lsst_diaSource_shape_flag_parent_source",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "This source is a parent source; we should only be measuring on deblended children in difference imaging"
+    },
+    {
+      "name": "lsst_diaSource_snr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "The signal-to-noise ratio at which this source was detected in the difference image"
+    },
+    {
+      "name": "lsst_diaSource_ssObjectId",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Id of the ssObject this source was associated with, if any. If not, it is set to NULL (each diaSource will be associated with either a diaObject or ssObject)"
+    },
+    {
+      "name": "lsst_diaSource_templateFlux",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Forced photometry flux for a point source model measured on the template image centered at the DiaObject position [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_templateFluxErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of templateFlux [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_timeProcessedMjdTai",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Time when the image was processed and this DiaSource record was generated, expressed as Modified Julian Date, International Atomic Time"
+    },
+    {
+      "name": "lsst_diaSource_timeWithdrawnMjdTai",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Time when this record was marked invalid, expressed as Modified Julian Date, International Atomic Time"
+    },
+    {
+      "name": "lsst_diaSource_trail_flag_edge",
+      "type": "bool",
+      "origin": "LSST",
+      "description": "This flag is set if a trailed source extends onto or past edge pixels"
+    },
+    {
+      "name": "lsst_diaSource_trailAngle",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum likelihood fit of the angle between the meridian through the centroid and the trail direction (bearing) [deg]"
+    },
+    {
+      "name": "lsst_diaSource_trailAngleErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of trailAngle [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_trailChi2",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Chi^2 statistic of the trailed source model fit"
+    },
+    {
+      "name": "lsst_diaSource_trailDec",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Declination coordinate of centroid for trailed source model [deg]"
+    },
+    {
+      "name": "lsst_diaSource_trailDecErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of trailDec [deg]"
+    },
+    {
+      "name": "lsst_diaSource_trailFlux",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Flux for a trailed source model. Note this actually measures the flux difference between the template and the visit image [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_trailFluxErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of trailFlux [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_trailLength",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Maximum likelihood fit of trail length [arcsec]"
+    },
+    {
+      "name": "lsst_diaSource_trailLengthErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of trailLength [nJy]"
+    },
+    {
+      "name": "lsst_diaSource_trailNdata",
+      "type": "int",
+      "origin": "LSST",
+      "description": "The number of data points (pixels) used to fit the trailed source model"
+    },
+    {
+      "name": "lsst_diaSource_trailRa",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Right ascension coordinate of centroid for trailed source model [deg]"
+    },
+    {
+      "name": "lsst_diaSource_trailRaErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of trailRa [deg]"
+    },
+    {
+      "name": "lsst_diaSource_visit",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Id of the visit where this diaSource was measured"
+    },
+    {
+      "name": "lsst_diaSource_x",
+      "type": "float",
+      "origin": "LSST",
+      "description": "x position computed by a centroiding algorithm [pixel]"
+    },
+    {
+      "name": "lsst_diaSource_xErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of x [pixel]"
+    },
+    {
+      "name": "lsst_diaSource_y",
+      "type": "float",
+      "origin": "LSST",
+      "description": "y position computed by a centroiding algorithm [pixel]"
+    },
+    {
+      "name": "lsst_diaSource_yErr",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty of y [pixel]"
+    },
+    {
+      "name": "lsst_mpc_orbits_a",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Semi Major Axis [au]"
+    },
+    {
+      "name": "lsst_mpc_orbits_a1",
+      "type": "float",
+      "origin": "LSST",
+      "description": "A1 non-grav components [m^2/ton]"
+    },
+    {
+      "name": "lsst_mpc_orbits_a1_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on A1 non-grav components [m^2/ton]"
+    },
+    {
+      "name": "lsst_mpc_orbits_a2",
+      "type": "float",
+      "origin": "LSST",
+      "description": "A2 non-grav components [m^2/ton]"
+    },
+    {
+      "name": "lsst_mpc_orbits_a2_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on A2 non-grav components [m^2/ton]"
+    },
+    {
+      "name": "lsst_mpc_orbits_a3",
+      "type": "float",
+      "origin": "LSST",
+      "description": "A3 non-grav components [m^2/ton]"
+    },
+    {
+      "name": "lsst_mpc_orbits_a3_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on A3 non-grav components [m^2/ton]"
+    },
+    {
+      "name": "lsst_mpc_orbits_a_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on Semi Major Axis [au]"
+    },
+    {
+      "name": "lsst_mpc_orbits_arc_length_sel",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Arc length over total observations *selected* [days]"
+    },
+    {
+      "name": "lsst_mpc_orbits_arc_length_total",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Arc length over total observations [days]"
+    },
+    {
+      "name": "lsst_mpc_orbits_argperi",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Argument of Pericenter [degrees]"
+    },
+    {
+      "name": "lsst_mpc_orbits_argperi_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on Argument of Pericenter [degrees]"
+    },
+    {
+      "name": "lsst_mpc_orbits_created_at",
+      "type": "int",
+      "origin": "LSST",
+      "description": "When this row was created (timestamp in microseconds)"
+    },
+    {
+      "name": "lsst_mpc_orbits_designation",
+      "type": "str",
+      "origin": "LSST",
+      "description": "The primary provisional designation in unpacked form (e.g. 2008 AB)."
+    },
+    {
+      "name": "lsst_mpc_orbits_dt",
+      "type": "float",
+      "origin": "LSST",
+      "description": "DT non-grav component"
+    },
+    {
+      "name": "lsst_mpc_orbits_dt_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on DT non-grav component"
+    },
+    {
+      "name": "lsst_mpc_orbits_e",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Eccentricity"
+    },
+    {
+      "name": "lsst_mpc_orbits_e_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on Eccentricity"
+    },
+    {
+      "name": "lsst_mpc_orbits_earth_moid",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Minimum Orbit Intersection Distance [au] with respect to the Earths Orbit"
+    },
+    {
+      "name": "lsst_mpc_orbits_epoch_mjd",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Epoch of the Orbfit-Solution in MJD"
+    },
+    {
+      "name": "lsst_mpc_orbits_fitting_datetime",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Date of the last orbit fit (timestamp in microseconds)"
+    },
+    {
+      "name": "lsst_mpc_orbits_g",
+      "type": "float",
+      "origin": "LSST",
+      "description": "G-Slope Parameter"
+    },
+    {
+      "name": "lsst_mpc_orbits_h",
+      "type": "float",
+      "origin": "LSST",
+      "description": "H-Magnitude (Absolute Magnitude)"
+    },
+    {
+      "name": "lsst_mpc_orbits_i",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Inclination [degrees]"
+    },
+    {
+      "name": "lsst_mpc_orbits_i_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on Inclination [degrees]"
+    },
+    {
+      "name": "lsst_mpc_orbits_id",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Internal ID (generally not seen/used by the user)"
+    },
+    {
+      "name": "lsst_mpc_orbits_mean_anomaly",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Mean Anomaly [degrees]"
+    },
+    {
+      "name": "lsst_mpc_orbits_mean_anomaly_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on Mean Anomaly [degrees]"
+    },
+    {
+      "name": "lsst_mpc_orbits_mean_motion",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Orbital Mean Motion [degrees per day]"
+    },
+    {
+      "name": "lsst_mpc_orbits_mean_motion_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on Orbital Mean Motion [degrees per day]"
+    },
+    {
+      "name": "lsst_mpc_orbits_mpc_orb_jsonb",
+      "type": "str",
+      "origin": "LSST",
+      "description": "Details of the orbit solution in JSON form"
+    },
+    {
+      "name": "lsst_mpc_orbits_nobs_total",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Total number of all observations (optical + radar) available"
+    },
+    {
+      "name": "lsst_mpc_orbits_nobs_total_sel",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Total number of all observations (optical + radar) selected for use in orbit fitting"
+    },
+    {
+      "name": "lsst_mpc_orbits_node",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Longitude of Ascending Node [degrees]"
+    },
+    {
+      "name": "lsst_mpc_orbits_node_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on Longitude of Ascending Node [degrees]"
+    },
+    {
+      "name": "lsst_mpc_orbits_nopp",
+      "type": "int",
+      "origin": "LSST",
+      "description": "number of oppositions"
+    },
+    {
+      "name": "lsst_mpc_orbits_normalized_rms",
+      "type": "float",
+      "origin": "LSST",
+      "description": "rms of the fit [unitless]"
+    },
+    {
+      "name": "lsst_mpc_orbits_not_normalized_rms",
+      "type": "float",
+      "origin": "LSST",
+      "description": "unnormalized rms of the fit [arcsec]"
+    },
+    {
+      "name": "lsst_mpc_orbits_orbit_type_int",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Orbit Type (Integer)"
+    },
+    {
+      "name": "lsst_mpc_orbits_packed_primary_provisional_designation",
+      "type": "str",
+      "origin": "LSST",
+      "description": "The primary provisional designation in packed form (e.g. K08A00B)"
+    },
+    {
+      "name": "lsst_mpc_orbits_peri_time",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Time from Pericenter Passage [days]"
+    },
+    {
+      "name": "lsst_mpc_orbits_peri_time_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on Time from Pericenter Passage [days]"
+    },
+    {
+      "name": "lsst_mpc_orbits_period",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Orbital Period [days]"
+    },
+    {
+      "name": "lsst_mpc_orbits_period_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on Orbital Period [days]"
+    },
+    {
+      "name": "lsst_mpc_orbits_q",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Pericenter Distance [au]"
+    },
+    {
+      "name": "lsst_mpc_orbits_q_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on Pericenter Distance [au]"
+    },
+    {
+      "name": "lsst_mpc_orbits_srp",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Solar-Radiation Pressure Component [m^2/ton]"
+    },
+    {
+      "name": "lsst_mpc_orbits_srp_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on Solar-Radiation Pressure Component [m^2/ton]"
+    },
+    {
+      "name": "lsst_mpc_orbits_u_param",
+      "type": "int",
+      "origin": "LSST",
+      "description": "U parameter (Uncertainty parameter)"
+    },
+    {
+      "name": "lsst_mpc_orbits_unpacked_primary_provisional_designation",
+      "type": "str",
+      "origin": "LSST",
+      "description": "The primary provisional designation in unpacked form (e.g. 2008 AB)"
+    },
+    {
+      "name": "lsst_mpc_orbits_updated_at",
+      "type": "int",
+      "origin": "LSST",
+      "description": "When this row was updated (timestamp in microseconds)"
+    },
+    {
+      "name": "lsst_mpc_orbits_yarkovsky",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Yarkovsky Component [10^(-10)*au/day^2]"
+    },
+    {
+      "name": "lsst_mpc_orbits_yarkovsky_unc",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Uncertainty on Yarkovsky Component [10^(-10)*au/day^2]"
+    },
+    {
+      "name": "lsst_MPCORB_a",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Semimajor axis [AU]"
+    },
+    {
+      "name": "lsst_MPCORB_e",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Orbital eccentricity"
+    },
+    {
+      "name": "lsst_MPCORB_epoch",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Epoch (in MJD, .0 TT) [d]"
+    },
+    {
+      "name": "lsst_MPCORB_incl",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Inclination to the ecliptic, J2000.0 [deg]"
+    },
+    {
+      "name": "lsst_MPCORB_M",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Mean anomaly at the epoch [deg]"
+    },
+    {
+      "name": "lsst_MPCORB_mpcDesignation",
+      "type": "str",
+      "origin": "LSST",
+      "description": "Number or provisional designation (in packed form)"
+    },
+    {
+      "name": "lsst_MPCORB_mpcH",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Absolute magnitude, H [mag]"
+    },
+    {
+      "name": "lsst_MPCORB_node",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Longitude of the ascending node, J2000.0 [deg]"
+    },
+    {
+      "name": "lsst_MPCORB_peri",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Argument of perihelion, J2000.0 [deg]"
+    },
+    {
+      "name": "lsst_MPCORB_q",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Perihelion distance [AU]"
+    },
+    {
+      "name": "lsst_MPCORB_ssObjectId",
+      "type": "int",
+      "origin": "LSST",
+      "description": "LSST unique identifier (if observed by LSST)"
+    },
+    {
+      "name": "lsst_MPCORB_t_p",
+      "type": "float",
+      "origin": "LSST",
+      "description": "MJD of pericentric passage [d]"
+    },
+    {
+      "name": "lsst_observation_reason",
+      "type": "str",
+      "origin": "LSST",
+      "description": "Scheduler reason for the image containing this diaSource"
+    },
+    {
+      "name": "lsst_ssSource_designation",
+      "type": "str",
+      "origin": "LSST",
+      "description": "The unpacked primary provisional designation for this object."
+    },
+    {
+      "name": "lsst_ssSource_diaDistanceRank",
+      "type": "int",
+      "origin": "LSST",
+      "description": "The rank of the diaSourceId-identified source in terms of its closeness to the predicted SSO position."
+    },
+    {
+      "name": "lsst_ssSource_diaSourceId",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Unique identifier of the observation (matching DiaSource.diaSourceId)."
+    },
+    {
+      "name": "lsst_ssSource_eclBeta",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Ecliptic latitude, converted from the observed coordinates."
+    },
+    {
+      "name": "lsst_ssSource_eclipticBeta",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Ecliptic latitude [deg]. Replaced by eclBeta."
+    },
+    {
+      "name": "lsst_ssSource_eclipticLambda",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Ecliptic longitude [deg]. Replaced by eclLambda."
+    },
+    {
+      "name": "lsst_ssSource_eclLambda",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Ecliptic longitude, converted from the observed coordinates."
+    },
+    {
+      "name": "lsst_ssSource_elongation",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Solar elongation of the object at the time of observation."
+    },
+    {
+      "name": "lsst_ssSource_ephDec",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Predicted ICRS declination from the orbit in mpc_orbits."
+    },
+    {
+      "name": "lsst_ssSource_ephOffset",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Total observed versus predicted angular separation on the sky."
+    },
+    {
+      "name": "lsst_ssSource_ephOffsetAlongTrack",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Offset between observed and predicted position in the along-track direction on the sky."
+    },
+    {
+      "name": "lsst_ssSource_ephOffsetCrossTrack",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Offset between observed and predicted position in the cross-track direction on the sky."
+    },
+    {
+      "name": "lsst_ssSource_ephOffsetDec",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Offset between observed and predicted position in declination."
+    },
+    {
+      "name": "lsst_ssSource_ephOffsetRa",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Offset between observed and predicted position in the R.A. direction (includes cos(dec) term)."
+    },
+    {
+      "name": "lsst_ssSource_ephRa",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Predicted ICRS right ascension from the orbit in mpc_orbits."
+    },
+    {
+      "name": "lsst_ssSource_ephRate",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Total predicted on-sky angular rate of motion."
+    },
+    {
+      "name": "lsst_ssSource_ephRateDec",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Predicted on-sky angular rate in the declination direction."
+    },
+    {
+      "name": "lsst_ssSource_ephRateRa",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Predicted on-sky angular rate in the R.A. direction (includes the cos(dec) factor)."
+    },
+    {
+      "name": "lsst_ssSource_ephVmag",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Predicted magnitude in V band, computed from mpc_orbits data including the mpc_orbits-provided (H, G) estimates."
+    },
+    {
+      "name": "lsst_ssSource_galacticB",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Galactic latitude [deg]. Replaced by galLat."
+    },
+    {
+      "name": "lsst_ssSource_galacticL",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Galactic longitude [deg]. Replaced by galLon."
+    },
+    {
+      "name": "lsst_ssSource_galLat",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Galactic latitude, converted from the observed coordinates."
+    },
+    {
+      "name": "lsst_ssSource_galLon",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Galactic longitude, converted from the observed coordinates."
+    },
+    {
+      "name": "lsst_ssSource_helio_vtot",
+      "type": "float",
+      "origin": "LSST",
+      "description": "The magnitude of the heliocentric velocity vector, sqrt(vx*vx + vy*vy + vz*vz)."
+    },
+    {
+      "name": "lsst_ssSource_helio_vx",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian heliocentric X velocity at light-emission time (ICRS)."
+    },
+    {
+      "name": "lsst_ssSource_helio_vy",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian heliocentric Y velocity at light-emission time (ICRS)."
+    },
+    {
+      "name": "lsst_ssSource_helio_vz",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian heliocentric Z velocity at light-emission time (ICRS)."
+    },
+    {
+      "name": "lsst_ssSource_helio_x",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian heliocentric X coordinate at light-emission time (ICRS)."
+    },
+    {
+      "name": "lsst_ssSource_helio_y",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian heliocentric Y coordinate at light-emission time (ICRS)."
+    },
+    {
+      "name": "lsst_ssSource_helio_z",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian heliocentric Z coordinate at light-emission time (ICRS)."
+    },
+    {
+      "name": "lsst_ssSource_heliocentricDist",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Heliocentric distance [AU]. Replaced by helioRange."
+    },
+    {
+      "name": "lsst_ssSource_heliocentricVX",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian heliocentric X velocity [AU/d]. Replaced by helio_vx."
+    },
+    {
+      "name": "lsst_ssSource_heliocentricVY",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian heliocentric Y velocity [AU/d]. Replaced by helio_vy."
+    },
+    {
+      "name": "lsst_ssSource_heliocentricVZ",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian heliocentric Z velocity [AU/d]. Replaced by helio_vz."
+    },
+    {
+      "name": "lsst_ssSource_heliocentricX",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian heliocentric X coordinate [AU]. Replaced by helio_x."
+    },
+    {
+      "name": "lsst_ssSource_heliocentricY",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian heliocentric Y coordinate [AU]. Replaced by helio_y."
+    },
+    {
+      "name": "lsst_ssSource_heliocentricZ",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian heliocentric Z coordinate [AU]. Replaced by helio_z."
+    },
+    {
+      "name": "lsst_ssSource_helioRange",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Heliocentric distance (r) at light-emission time."
+    },
+    {
+      "name": "lsst_ssSource_helioRangeRate",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Heliocentric radial velocity (rdot); positive values indicate motion away from the Sun."
+    },
+    {
+      "name": "lsst_ssSource_phaseAngle",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Phase angle [deg] between the Sun, object, and observer."
+    },
+    {
+      "name": "lsst_ssSource_predictedVMagnitude",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Predicted V-band magnitude [mag]. Replaced by ephVmag."
+    },
+    {
+      "name": "lsst_ssSource_residualDec",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Residual Dec vs. ephemeris [deg]. Replaced by ephOffsetDec."
+    },
+    {
+      "name": "lsst_ssSource_residualRa",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Residual R.A. vs. ephemeris [deg]. Replaced by ephOffsetRa."
+    },
+    {
+      "name": "lsst_ssSource_ssObjectId",
+      "type": "int",
+      "origin": "LSST",
+      "description": "Unique identifier of the object."
+    },
+    {
+      "name": "lsst_ssSource_topo_vtot",
+      "type": "float",
+      "origin": "LSST",
+      "description": "The magnitude of the topocentric velocity vector, sqrt(vx*vx + vy*vy + vz*vz)."
+    },
+    {
+      "name": "lsst_ssSource_topo_vx",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian topocentric X velocity at light-emission time (ICRS)."
+    },
+    {
+      "name": "lsst_ssSource_topo_vy",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian topocentric Y velocity at light-emission time (ICRS)."
+    },
+    {
+      "name": "lsst_ssSource_topo_vz",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian topocentric Z velocity at light-emission time (ICRS)."
+    },
+    {
+      "name": "lsst_ssSource_topo_x",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian topocentric X coordinate at light-emission time (ICRS)."
+    },
+    {
+      "name": "lsst_ssSource_topo_y",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian topocentric Y coordinate at light-emission time (ICRS)."
+    },
+    {
+      "name": "lsst_ssSource_topo_z",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian topocentric Z coordinate at light-emission time (ICRS)."
+    },
+    {
+      "name": "lsst_ssSource_topocentricDist",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Topocentric distance [AU]. Replaced by topoRange."
+    },
+    {
+      "name": "lsst_ssSource_topocentricVX",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian topocentric X velocity [AU/d]. Replaced by topo_vx."
+    },
+    {
+      "name": "lsst_ssSource_topocentricVY",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian topocentric Y velocity [AU/d]. Replaced by topo_vy."
+    },
+    {
+      "name": "lsst_ssSource_topocentricVZ",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian topocentric Z velocity [AU/d]. Replaced by topo_vz."
+    },
+    {
+      "name": "lsst_ssSource_topocentricX",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian topocentric X coordinate [AU]. Replaced by topo_x."
+    },
+    {
+      "name": "lsst_ssSource_topocentricY",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian topocentric Y coordinate [AU]. Replaced by topo_y."
+    },
+    {
+      "name": "lsst_ssSource_topocentricZ",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Cartesian topocentric Z coordinate [AU]. Replaced by topo_z."
+    },
+    {
+      "name": "lsst_ssSource_topoRange",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Topocentric distance (delta) at light-emission time."
+    },
+    {
+      "name": "lsst_ssSource_topoRangeRate",
+      "type": "float",
+      "origin": "LSST",
+      "description": "Topocentric radial (line-of-sight) velocity (deldot); positive values indicate motion away from the observer."
+    },
+    {
+      "name": "lsst_target_name",
+      "type": "str",
+      "origin": "LSST",
+      "description": "Scheduler target for the image containing this diaSource"
+    },
+    {
+      "name": "ztf_aimage",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Windowed profile RMS afloat major axis from SExtractor [pixels]"
+    },
+    {
+      "name": "ztf_aimagerat",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Ratio: aimage / fwhm"
+    },
+    {
+      "name": "ztf_bimage",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Windowed profile RMS afloat minor axis from SExtractor [pixels]"
+    },
+    {
+      "name": "ztf_bimagerat",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Ratio: bimage / fwhm"
+    },
+    {
+      "name": "ztf_candid",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Candidate ID from operations DB"
+    },
+    {
+      "name": "ztf_chinr",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "DAOPhot chi parameter of nearest source in reference image PSF-catalog"
+    },
+    {
+      "name": "ztf_chipsf",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Reduced chi-square for PSF-fit"
+    },
+    {
+      "name": "ztf_classtar",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Star/Galaxy classification score from SExtractor"
+    },
+    {
+      "name": "ztf_clrcoeff",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Color coefficient from linear fit from photometric calibration of science image"
+    },
+    {
+      "name": "ztf_clrcounc",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Color coefficient uncertainty from linear fit (corresponding to clrcoeff)"
+    },
+    {
+      "name": "ztf_clrmed",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Median color of all PS1 photometric calibrators used from science image processing [mag]: for filter (fid) = 1, 2, 3, PS1 color used = g-r, g-r, r-i respectively"
+    },
+    {
+      "name": "ztf_clrrms",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "RMS color (deviation from average) of all PS1 photometric calibrators used from science image processing [mag]"
+    },
+    {
+      "name": "ztf_dec",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Declination of candidate; J2000 [deg]"
+    },
+    {
+      "name": "ztf_decnr",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Declination of nearest source in reference image PSF-catalog; J2000 [deg]"
+    },
+    {
+      "name": "ztf_diffmaglim",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Expected 5-sigma mag limit in difference image based on global noise estimate [mag]"
+    },
+    {
+      "name": "ztf_distnr",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "distance to nearest source in reference image PSF-catalog [pixels]"
+    },
+    {
+      "name": "ztf_distpsnr1",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Distance to closest source from PS1 catalog; if exists within 30 arcsec [arcsec]"
+    },
+    {
+      "name": "ztf_distpsnr2",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Distance to second closest source from PS1 catalog; if exists within 30 arcsec [arcsec]"
+    },
+    {
+      "name": "ztf_distpsnr3",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Distance to third closest source from PS1 catalog; if exists within 30 arcsec [arcsec]"
+    },
+    {
+      "name": "ztf_drb",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "RealBogus quality score from Deep-Learning-based classifier; range is 0 to 1 where closer to 1 is more reliable"
+    },
+    {
+      "name": "ztf_drbversion",
+      "type": "str",
+      "origin": "ZTF",
+      "description": "version of Deep-Learning-based classifier model used to assign RealBogus (drb) quality score"
+    },
+    {
+      "name": "ztf_dsdiff",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Difference of statistics: dsnrms - ssnrms"
+    },
+    {
+      "name": "ztf_dsnrms",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Ratio: D/stddev(D) on event position where D = difference image"
+    },
+    {
+      "name": "ztf_elong",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Ratio: aimage / bimage"
+    },
+    {
+      "name": "ztf_exptime",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Integration time of camera exposure [sec]"
+    },
+    {
+      "name": "ztf_fid",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Filter ID (1=g; 2=R; 3=i)"
+    },
+    {
+      "name": "ztf_field",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "ZTF field ID"
+    },
+    {
+      "name": "ztf_fwhm",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Full Width Half Max assuming a Gaussian core, from SExtractor [pixels]"
+    },
+    {
+      "name": "ztf_isdiffpos",
+      "type": "str",
+      "origin": "ZTF",
+      "description": "t or 1 => candidate is from positive (sci minus ref) subtraction; f or 0 => candidate is from negative (ref minus sci) subtraction"
+    },
+    {
+      "name": "ztf_jd",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Observation Julian date at start of exposure [days]"
+    },
+    {
+      "name": "ztf_jdendhist",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Latest Julian date of epoch corresponding to ndethist [days]"
+    },
+    {
+      "name": "ztf_jdendref",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Observation Julian date of latest exposure used to generate reference image [days]"
+    },
+    {
+      "name": "ztf_jdstarthist",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Earliest Julian date of epoch corresponding to ndethist [days]"
+    },
+    {
+      "name": "ztf_jdstartref",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Observation Julian date of earliest exposure used to generate reference image [days]"
+    },
+    {
+      "name": "ztf_magap",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Aperture mag using 14 pixel diameter aperture [mag]"
+    },
+    {
+      "name": "ztf_magapbig",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Aperture mag using 18 pixel diameter aperture [mag]"
+    },
+    {
+      "name": "ztf_magdiff",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Difference: magap - magpsf [mag]"
+    },
+    {
+      "name": "ztf_magfromlim",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Difference: diffmaglim - magap [mag]"
+    },
+    {
+      "name": "ztf_maggaia",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Gaia (G-band) magnitude of closest source from Gaia DR1 catalog irrespective of magnitude; if exists within 90 arcsec [mag]"
+    },
+    {
+      "name": "ztf_maggaiabright",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Gaia (G-band) magnitude of closest source from Gaia DR1 catalog brighter than magnitude 14; if exists within 90 arcsec [mag]"
+    },
+    {
+      "name": "ztf_magnr",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "magnitude of nearest source in reference image PSF-catalog [mag]"
+    },
+    {
+      "name": "ztf_magpsf",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Magnitude from PSF-fit photometry [mag]"
+    },
+    {
+      "name": "ztf_magzpsci",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Magnitude zero point for photometry estimates [mag]"
+    },
+    {
+      "name": "ztf_magzpscirms",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "RMS (deviation from average) in all differences between instrumental photometry and matched photometric calibrators from science image processing [mag]"
+    },
+    {
+      "name": "ztf_magzpsciunc",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Magnitude zero point uncertainty (in magzpsci) [mag]"
+    },
+    {
+      "name": "ztf_mindtoedge",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Distance to nearest edge in image [pixels]"
+    },
+    {
+      "name": "ztf_nbad",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "number of prior-tagged bad pixels in a 5 x 5 pixel stamp"
+    },
+    {
+      "name": "ztf_ncovhist",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Number of times input candidate position fell on any field and readout-channel going back to beginning of survey"
+    },
+    {
+      "name": "ztf_ndethist",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Number of spatially-coincident detections falling within 1.5 arcsec going back to beginning of survey; only detections that fell on the same field and readout-channel ID where the input candidate was observed are counted. All raw detections down to a photometric S/N of ~ 3 are included."
+    },
+    {
+      "name": "ztf_neargaia",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Distance to closest source from Gaia DR1 catalog irrespective of magnitude; if exists within 90 arcsec [arcsec]"
+    },
+    {
+      "name": "ztf_neargaiabright",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Distance to closest source from Gaia DR1 catalog brighter than magnitude 14; if exists within 90 arcsec [arcsec]"
+    },
+    {
+      "name": "ztf_nframesref",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Number of frames (epochal images) used to generate reference image"
+    },
+    {
+      "name": "ztf_nid",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Night ID"
+    },
+    {
+      "name": "ztf_nmatches",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Number of PS1 photometric calibrators used to calibrate science image from science image processing"
+    },
+    {
+      "name": "ztf_nmtchps",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Number of source matches from PS1 catalog falling within 30 arcsec"
+    },
+    {
+      "name": "ztf_nneg",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "number of negative pixels in a 5 x 5 pixel stamp"
+    },
+    {
+      "name": "ztf_object_id",
+      "type": "str",
+      "origin": "ZTF",
+      "description": "object identifier or name. Note: Alias for objectId"
+    },
+    {
+      "name": "ztf_objectidps1",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Object ID of closest source from PS1 catalog; if exists within 30 arcsec"
+    },
+    {
+      "name": "ztf_objectidps2",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Object ID of second closest source from PS1 catalog; if exists within 30 arcsec"
+    },
+    {
+      "name": "ztf_objectidps3",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Object ID of third closest source from PS1 catalog; if exists within 30 arcsec"
+    },
+    {
+      "name": "ztf_pdiffimfilename",
+      "type": "str",
+      "origin": "ZTF",
+      "description": "filename of positive (sci minus ref) difference image"
+    },
+    {
+      "name": "ztf_pid",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Processing ID for science image to facilitate archive retrieval"
+    },
+    {
+      "name": "ztf_programid",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Program ID: encodes either public, collab, or caltech mode"
+    },
+    {
+      "name": "ztf_programpi",
+      "type": "str",
+      "origin": "ZTF",
+      "description": "Principal investigator attached to program ID"
+    },
+    {
+      "name": "ztf_ra",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Right Ascension of candidate; J2000 [deg]"
+    },
+    {
+      "name": "ztf_ranr",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Right Ascension of nearest source in reference image PSF-catalog; J2000 [deg]"
+    },
+    {
+      "name": "ztf_rb",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "RealBogus quality score from Random Forest classifier; range is 0 to 1 where closer to 1 is more reliable"
+    },
+    {
+      "name": "ztf_rbversion",
+      "type": "str",
+      "origin": "ZTF",
+      "description": "version of Random Forest classifier model used to assign RealBogus (rb) quality score"
+    },
+    {
+      "name": "ztf_rcid",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Readout channel ID [00 .. 63]"
+    },
+    {
+      "name": "ztf_rfid",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Processing ID for reference image to facilitate archive retrieval"
+    },
+    {
+      "name": "ztf_scorr",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Peak-pixel signal-to-noise ratio in point source matched-filtered detection image"
+    },
+    {
+      "name": "ztf_seeratio",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Ratio: difffwhm / fwhm"
+    },
+    {
+      "name": "ztf_sgmag1",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "g-band PSF-fit magnitude of closest source from PS1 catalog; if exists within 30 arcsec [mag]"
+    },
+    {
+      "name": "ztf_sgmag2",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "g-band PSF-fit magnitude of second closest source from PS1 catalog; if exists within 30 arcsec [mag]"
+    },
+    {
+      "name": "ztf_sgmag3",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "g-band PSF-fit magnitude of third closest source from PS1 catalog; if exists within 30 arcsec [mag]"
+    },
+    {
+      "name": "ztf_sgscore1",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Star/Galaxy score of closest source from PS1 catalog; if exists within 30 arcsec: 0 <= sgscore <= 1 where closer to 1 implies higher likelihood of being a star"
+    },
+    {
+      "name": "ztf_sgscore2",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Star/Galaxy score of second closest source from PS1 catalog; if exists within 30 arcsec: 0 <= sgscore <= 1 where closer to 1 implies higher likelihood of being a star"
+    },
+    {
+      "name": "ztf_sgscore3",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Star/Galaxy score of third closest source from PS1 catalog; if exists within 30 arcsec: 0 <= sgscore <= 1 where closer to 1 implies higher likelihood of being a star"
+    },
+    {
+      "name": "ztf_sharpnr",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "DAOPhot sharp parameter of nearest source in reference image PSF-catalog"
+    },
+    {
+      "name": "ztf_sigmagap",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "1-sigma uncertainty in magap [mag]"
+    },
+    {
+      "name": "ztf_sigmagapbig",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "1-sigma uncertainty in magapbig [mag]"
+    },
+    {
+      "name": "ztf_sigmagnr",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "1-sigma uncertainty in magnr [mag]"
+    },
+    {
+      "name": "ztf_sigmapsf",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "1-sigma uncertainty in magpsf [mag]"
+    },
+    {
+      "name": "ztf_simag1",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "i-band PSF-fit magnitude of closest source from PS1 catalog; if exists within 30 arcsec [mag]"
+    },
+    {
+      "name": "ztf_simag2",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "i-band PSF-fit magnitude of second closest source from PS1 catalog; if exists within 30 arcsec [mag]"
+    },
+    {
+      "name": "ztf_simag3",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "i-band PSF-fit magnitude of third closest source from PS1 catalog; if exists within 30 arcsec [mag]"
+    },
+    {
+      "name": "ztf_sky",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Local sky background estimate [DN]"
+    },
+    {
+      "name": "ztf_srmag1",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "r-band PSF-fit magnitude of closest source from PS1 catalog; if exists within 30 arcsec [mag]"
+    },
+    {
+      "name": "ztf_srmag2",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "r-band PSF-fit magnitude of second closest source from PS1 catalog; if exists within 30 arcsec [mag]"
+    },
+    {
+      "name": "ztf_srmag3",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "r-band PSF-fit magnitude of third closest source from PS1 catalog; if exists within 30 arcsec [mag]"
+    },
+    {
+      "name": "ztf_ssdistnr",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "distance to nearest known solar system object if exists within 30 arcsec [arcsec]"
+    },
+    {
+      "name": "ztf_ssmagnr",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "magnitude of nearest known solar system object if exists within 30 arcsec (usually V-band from MPC archive) [mag]"
+    },
+    {
+      "name": "ztf_ssnamenr",
+      "type": "str",
+      "origin": "ZTF",
+      "description": "name of nearest known solar system object if exists within 30 arcsec (from MPC archive)"
+    },
+    {
+      "name": "ztf_ssnrms",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Ratio: S/stddev(S) on event position where S = image of convolution: D (x) PSF(D)"
+    },
+    {
+      "name": "ztf_sumrat",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Ratio: sum(pixels) / sum(|pixels|) in a 5 x 5 pixel stamp where stamp is first median-filtered to mitigate outliers"
+    },
+    {
+      "name": "ztf_szmag1",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "z-band PSF-fit magnitude of closest source from PS1 catalog; if exists within 30 arcsec [mag]"
+    },
+    {
+      "name": "ztf_szmag2",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "z-band PSF-fit magnitude of second closest source from PS1 catalog; if exists within 30 arcsec [mag]"
+    },
+    {
+      "name": "ztf_szmag3",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "z-band PSF-fit magnitude of third closest source from PS1 catalog; if exists within 30 arcsec [mag]"
+    },
+    {
+      "name": "ztf_tblid",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "Internal pipeline table extraction ID"
+    },
+    {
+      "name": "ztf_tooflag",
+      "type": "int",
+      "origin": "ZTF",
+      "description": "1 => candidate is from a Target-of-Opportunity (ToO) exposure; 0 => candidate is from a non-ToO exposure"
+    },
+    {
+      "name": "ztf_xpos",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "x-image position of candidate [pixels]"
+    },
+    {
+      "name": "ztf_ypos",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "y-image position of candidate [pixels]"
+    },
+    {
+      "name": "ztf_zpclrcov",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Covariance in magzpsci and clrcoeff from science image processing [mag^2]"
+    },
+    {
+      "name": "ztf_zpmed",
+      "type": "float",
+      "origin": "ZTF",
+      "description": "Magnitude zero point from median of all differences between instrumental photometry and matched photometric calibrators from science image processing [mag]"
+    }
+  ]
+}
